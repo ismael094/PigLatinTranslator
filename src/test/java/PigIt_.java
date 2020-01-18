@@ -13,6 +13,11 @@ public class PigIt_ {
         assertThat(pigIt("Hola")).isEqualTo("olaHay");
     }
 
+    @Test
+    public void pigit_No_string_should_return_oNay() {
+        assertThat(pigIt("No")).isEqualTo("oNay");
+    }
+
     private String pigIt(String pharse) {
         if (pharse.length() == 0)
             return "";
