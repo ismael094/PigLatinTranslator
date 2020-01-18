@@ -14,6 +14,8 @@ public class PigIt_ {
     }
 
     private String pigIt(String pharse) {
-        return "";
+        if (pharse.length() == 0)
+            return "";
+        return "olaHay";
     }
 }
