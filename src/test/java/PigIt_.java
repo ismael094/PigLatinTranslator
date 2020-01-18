@@ -18,6 +18,11 @@ public class PigIt_ {
         assertThat(pigIt("No")).isEqualTo("oNay");
     }
 
+    @Test
+    public void pigit_with_two_words_string_should_return_the_pigit_of_the_words() {
+        assertThat(pigIt("Hola no")).isEqualTo("olaHay onay");
+    }
+
     private String pigIt(String phrase) {
         if (phrase.length() == 0)
             return "";
