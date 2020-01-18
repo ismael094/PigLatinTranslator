@@ -9,6 +9,6 @@ public class PigIt_ {
     }
 
     private String pigIt(String pharse) {
-        return null;
+        return "";
     }
 }
