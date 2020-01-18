@@ -18,9 +18,9 @@ public class PigIt_ {
         assertThat(pigIt("No")).isEqualTo("oNay");
     }
 
-    private String pigIt(String pharse) {
-        if (pharse.length() == 0)
+    private String pigIt(String phrase) {
+        if (phrase.length() == 0)
             return "";
-        return "olaHay";
+        return phrase.substring(1) + phrase.charAt(0) + "ay";
     }
 }
