@@ -41,8 +41,6 @@ public class PigIt_ {
     }
 
     private String pigItWord(String word) {
-        if (word.replaceAll("[A-Za-z]", "").length() != 0)
-            return word;
-        return word.substring(1) + word.charAt(0) + "ay";
+        return Character.isAlphabetic(0) ? word.substring(1) + word.charAt(0) + "ay" : word;
     }
 }
